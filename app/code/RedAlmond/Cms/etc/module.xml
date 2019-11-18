@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © Blue Acorn iCi && Ezequiel Alba github@ezequielalba
+ * Use of this material is prohibited without written approval of the author.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="RedAlmond_Cms">
+        <sequence>
+            <module name="Magento_Cms"/>
+        </sequence>
+    </module>
+</config>
