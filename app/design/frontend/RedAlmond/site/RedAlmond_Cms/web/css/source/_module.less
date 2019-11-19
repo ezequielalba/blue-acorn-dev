@@ -1,0 +1,65 @@
+// /**
+//  * Copyright © Blue Acorn iCi && Ezequiel Alba github@ezequielalba
+//  * Use of this material is prohibited without written approval of the author.
+//  */
+
+//
+//  Variables
+//  _____________________________________________
+@button--load-more__purple:#886cfe;
+@button--back-to-shop__blue:#0283ff;
+@button--checkout__yellow:#ffb903;
+
+@button--load-more__corner: #6c56cb;
+@button--back-to-shop__corner: #0168cc;
+@button--checkout__corner: #cc9402;
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .cms-page-view {
+        h1 {
+            font-weight: 600;
+            font-family: @font-family__sans-serif;
+            text-align: center;
+            letter-spacing: -0.5;
+        }
+    }
+
+    .grid {  
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 40px; 
+    }
+
+    button.button {
+        width: auto;
+        min-width: 150px;
+        padding: 15px 35px;
+        text-transform: uppercase;
+        color: @color-white;
+        border: 3px solid;
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+}

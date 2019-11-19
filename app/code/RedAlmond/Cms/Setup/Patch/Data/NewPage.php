@@ -42,21 +42,20 @@ class NewPage implements DataPatchInterface, PatchVersionInterface
     public function apply()
     {
         $cmsContent = '
-            <style>.grid {  display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 40px; }</style>
             <h1>BUTTONS</h1>
             <div class="grid">
                 <div class="col">
-                    <button class="button primary tocart" type="button">
+                    <button class="button load-more" type="button">
                         <span><span>Load More</span></span>
                     </button>
                 </div>
                 <div class="col">
-                    <button class="button btn-continue" title="Continue Shopping" type="button">
-                        <span><span>Continue Shopping</span></span>
+                    <button class="button back-to-shop" title="Back To Shop" type="button">
+                        <span><span>Back To Shop</span></span>
                     </button>
                 </div>
                 <div class="col">
-                    <button class="action primary checkout" type="button">
+                    <button class="button checkout" type="button">
                         Checkout
                     </button>
                 </div>
